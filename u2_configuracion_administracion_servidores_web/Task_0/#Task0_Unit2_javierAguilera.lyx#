@@ -218,45 +218,7 @@ mod_python
 Caso análogo a los dos anteriores.
  La diferencia radica en que mientras que los dos anteriores son módulos
  con soporte activo y en desarrollo, mod_python fue abandonado en 2013.
- Python, Perl y PHP hasta ese año, los tres, podían ser usados o bien con
- su módulo propio o bien mediante CGI (y/o sus derivados).
- CGI permite escribir scripts para el servidor en muchos lenguajes (además
- de los tres mencionados).
-\end_layout
-
-\begin_layout Standard
-Hoy en día, Perl y PHP siguen contando con su módulo propio, que permite
- mayor integración con Apache.
- Python se tiene que conformar con mod_wsgi.
- En los siguientes enlaces hay más información:
-\end_layout
-
-\begin_layout Itemize
-\begin_inset Flex URL
-status open
-
-\begin_layout Plain Layout
-
-https://pypi.org/project/mod-wsgi/
-\end_layout
-
-\end_inset
-
-
-\end_layout
-
-\begin_layout Itemize
-\begin_inset Flex URL
-status open
-
-\begin_layout Plain Layout
-
-https://en.wikipedia.org/wiki/Mod_python
-\end_layout
-
-\end_inset
-
-
+ Python, Perl y PHP hasta ese año, los tres, 
 \end_layout
 
 \end_body

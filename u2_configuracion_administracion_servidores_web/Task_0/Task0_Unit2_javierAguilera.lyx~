@@ -88,8 +88,111 @@ Unit 2.
 Javier Aguilera Aguilera 2º CFGS DAW
 \end_layout
 
-\begin_layout Standard
+\begin_layout Section
+mod_actions
+\end_layout
 
+\begin_layout Standard
+Ejecuta scripts CGI según el tipo de medio o el método de solicitud.
+ Este módulo tiene dos directivas: Action y Script:
+\end_layout
+
+\begin_layout Itemize
+La directiva Action permite ejecutar scripts CGI cuando un fichero de un
+ determinado contenido Mime es requerido.
+\end_layout
+
+\begin_layout Itemize
+La directiva Script permite ejecutar scripts CGI cuando un método en particular
+ es usado en una solicitud.
+ Esto hace mucho más fácil ejecutar scripts que el procesamiento de ficheros.
+\end_layout
+
+\begin_layout Section
+mod_cgi
+\end_layout
+
+\begin_layout Standard
+Ejecución de scripts CGI.
+ Cualquier fichero que tenga el manejador cgi-script será tratado como un
+ script CGI, y corriendo bajo el servidor, su salida será devuelta al cliente.
+ Los ficheros adquieren este manejador bien sea por tener un nombre que
+ contenga una extensión definida por la directiva AddHandler o bien sea
+ por estar en un directorio Scriptalias.
+\end_layout
+
+\begin_layout Section
+mod_cgid
+\end_layout
+
+\begin_layout Standard
+Este módulo se usa en el lugar de mod_cgi en el caso de que durante el proceso
+ de compilacion se seleccione multiproceso MPM.
+ Desde el punto de vista del usuario, este módulo se configura y maneja
+ de igual manera que mod_cgi.
+\end_layout
+
+\begin_layout Section
+mod_ext_filter
+\end_layout
+
+\begin_layout Standard
+El módulo md_ext_filter un modelo de programación simple y familiar para
+ filtros.
+ Usando este módulo, un programa que lee desde stdin y escribe en stdout
+ (por ejemplo, un comando de filtrado de tipo Unix) puede ser un filtro
+ de Apache.
+ Este mecanismo de filtrado es mucho más lento que uno que esté escrito
+ específicamente para la API de Apache y que se ejecute dentro del proceso
+ del servidor Apache, pero presenta las siguientes ventajas:
+\end_layout
+
+\begin_layout Itemize
+El modelo de programación es mucho más simple.
+\end_layout
+
+\begin_layout Itemize
+Cualquier lenguaje de programación o scripting puede ser usado.
+\end_layout
+
+\begin_layout Itemize
+Programas que ya existentes se puede utilizar sin modificar como filtros
+ de Apache.
+\end_layout
+
+\begin_layout Standard
+Incluso cuando las características de rendimiento no son adecuadas para
+ su uso en producción, mod_ext_filter puede ser usado como un entorno prototipo
+ para filtros.
+\end_layout
+
+\begin_layout Section
+mod_include
+\end_layout
+
+\begin_layout Standard
+Este módulo proporciona un filtro que procesará los archivos antes de que
+ se envíen al cliente.
+ El procesamiento se controla mediante comentarios SGML con formato especial
+ (elementos).
+ Estos elementos permiten el texto condicional, la inclusión de otros ficheros
+ o programas, asíc como la configuración e impresioón de variables de entorno.
+\end_layout
+
+\begin_layout Section
+mod_Idap
+\end_layout
+
+\begin_layout Section
+mod_perl
+\end_layout
+
+\begin_layout Section
+mod_php5
+\end_layout
+
+\begin_layout Section
+mod_python
 \end_layout
 
 \end_body
