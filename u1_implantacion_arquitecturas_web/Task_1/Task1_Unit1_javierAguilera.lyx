@@ -1,0 +1,527 @@
+#LyX 2.3 created this file. For more info see http://www.lyx.org/
+\lyxformat 544
+\begin_document
+\begin_header
+\save_transient_properties true
+\origin unavailable
+\textclass article
+\use_default_options true
+\maintain_unincluded_children false
+\language english
+\language_package default
+\inputencoding auto
+\fontencoding global
+\font_roman "default" "default"
+\font_sans "default" "default"
+\font_typewriter "default" "default"
+\font_math "auto" "auto"
+\font_default_family default
+\use_non_tex_fonts false
+\font_sc false
+\font_osf false
+\font_sf_scale 100 100
+\font_tt_scale 100 100
+\use_microtype false
+\use_dash_ligatures true
+\graphics default
+\default_output_format default
+\output_sync 0
+\bibtex_command default
+\index_command default
+\paperfontsize default
+\spacing single
+\use_hyperref false
+\papersize default
+\use_geometry false
+\use_package amsmath 1
+\use_package amssymb 1
+\use_package cancel 1
+\use_package esint 1
+\use_package mathdots 1
+\use_package mathtools 1
+\use_package mhchem 1
+\use_package stackrel 1
+\use_package stmaryrd 1
+\use_package undertilde 1
+\cite_engine basic
+\cite_engine_type default
+\biblio_style plain
+\use_bibtopic false
+\use_indices false
+\paperorientation portrait
+\suppress_date true
+\justification true
+\use_refstyle 1
+\use_minted 0
+\index Index
+\shortcut idx
+\color #008000
+\end_index
+\secnumdepth 3
+\tocdepth 3
+\paragraph_separation indent
+\paragraph_indentation default
+\is_math_indent 0
+\math_numbering_side default
+\quotes_style english
+\dynamic_quotes 0
+\papercolumns 1
+\papersides 1
+\paperpagestyle default
+\tracking_changes false
+\output_changes false
+\html_math_output 0
+\html_css_as_file 0
+\html_be_strict false
+\end_header
+
+\begin_body
+
+\begin_layout Title
+
+\series bold
+Unit 1.
+ Task 1: Web Evolution
+\end_layout
+
+\begin_layout Author
+Javier Aguilera Aguilera 2º CFGS DAW
+\end_layout
+
+\begin_layout Standard
+\begin_inset Newpage pagebreak
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset CommandInset toc
+LatexCommand tableofcontents
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Newpage pagebreak
+\end_inset
+
+
+\end_layout
+
+\begin_layout Section
+Web 1.0
+\end_layout
+
+\begin_layout Standard
+The term Web 1.0 didn't appear until the term Web 2.0 was coined in 1999 by
+ Danni DiNucci.
+\end_layout
+
+\begin_layout Standard
+During that period the web was involved in a big transformation.
+ Most of web sites from the 90's decade were originally built with static
+ HTML pages and some simple styles embedded in HTML markup.
+\end_layout
+
+\begin_layout Standard
+In the late 90's and early 2000s, the interactive features of the web sites
+ redefined what could be done in a web browser and marked an important point
+ in the evolution of the web development world.
+\end_layout
+
+\begin_layout Standard
+The web 1.0 was characterized by:
+\end_layout
+
+\begin_layout Itemize
+Static web pages.
+ 
+\end_layout
+
+\begin_layout Itemize
+Content stored in files instead of separated database as it is usual nowadays.
+ 
+\end_layout
+
+\begin_layout Itemize
+Contents and design mix.
+\end_layout
+
+\begin_layout Itemize
+Patented HTML marks (led into web browser incompatibilities).
+ 
+\end_layout
+
+\begin_layout Itemize
+Guestbook (web page with the users comments) .
+\end_layout
+
+\begin_layout Itemize
+Sending forms by email.
+\end_layout
+
+\begin_layout Standard
+\begin_inset Float figure
+placement H
+wide false
+sideways false
+status collapsed
+
+\begin_layout Plain Layout
+\align center
+\begin_inset Graphics
+	filename web1.webp
+	lyxscale 40
+	scale 40
+
+\end_inset
+
+
+\begin_inset Caption Standard
+
+\begin_layout Plain Layout
+Web 1.0
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Section
+Web 2.0
+\end_layout
+
+\begin_layout Standard
+It is the web based on community users.
+ It is also called de social web due to its collaborative and social constructiv
+ist approach.
+ Information is characterized by its permanent change.
+\end_layout
+
+\begin_layout Standard
+In this period we can find big progresses such as the information's exchange
+ between users and the interaction made in social networks as Hi5 or Facebook,
+ beetween many others, making posible being connected with all the world.
+\end_layout
+
+\begin_layout Standard
+Principal characteristics of the Web 2.0:
+\end_layout
+
+\begin_layout Itemize
+The boom of blogs.
+\end_layout
+
+\begin_layout Itemize
+The boom of social networks.
+\end_layout
+
+\begin_layout Itemize
+Webs made by users, using auto-edition plataforms.
+\end_layout
+
+\begin_layout Itemize
+Content added by the users as a key value of the web.
+\end_layout
+
+\begin_layout Standard
+The Web 2.0 is the representation of the evolution from traditional applications
+ to web applications focused on the final user.
+\end_layout
+
+\begin_layout Standard
+\begin_inset Float figure
+placement H
+wide false
+sideways false
+status collapsed
+
+\begin_layout Plain Layout
+\align center
+\begin_inset Graphics
+	filename web2.png
+	lyxscale 40
+	scale 40
+
+\end_inset
+
+
+\begin_inset Caption Standard
+
+\begin_layout Plain Layout
+Web 2.0
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Section
+Web 3.0
+\end_layout
+
+\begin_layout Standard
+Web 3.0 is the expression used to describe the evolution of use and the interacti
+on between people on Internet made by differents ways in which we include
+ the transformation the network into a data base, a social movement with
+ the objetive of making contents accesible by many non-browser applications.
+\end_layout
+
+\begin_layout Standard
+Some characteristics of the Web 3.0 are the intelligence, sociability, speed,
+ open, ubiquity, easiness, artificial intelligence (AI) and the semantic
+ web.
+\end_layout
+
+\begin_layout Standard
+\begin_inset Float figure
+placement H
+wide false
+sideways false
+status collapsed
+
+\begin_layout Plain Layout
+\align center
+\begin_inset Graphics
+	filename web3.png
+	lyxscale 30
+	scale 30
+
+\end_inset
+
+
+\begin_inset Caption Standard
+
+\begin_layout Plain Layout
+Web 3.0
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Section
+Web 4.0
+\end_layout
+
+\begin_layout Standard
+Web 4.0 is an open web, connected, predictive and intelligent made with the
+ aim of providing specific solutions to the user, both based on the information
+ that the user gives or all the information that allready exits on the web.
+\end_layout
+
+\begin_layout Standard
+It is a new paradigm that has the purpose of improving people's experience
+ on the Internet thanks to new and better connected tecnologies that allow
+ a complete and personalized interaction.
+\end_layout
+
+\begin_layout Standard
+The Web 4.0 has four main pillar:
+\end_layout
+
+\begin_layout Itemize
+The natural language understanding (NLU) and Speech-to-text tecnologies.
+\end_layout
+
+\begin_layout Itemize
+The use of context information and history of the user.
+\end_layout
+
+\begin_layout Itemize
+New comunication models machine to machine (M2M).
+\end_layout
+
+\begin_layout Itemize
+New interaction models of the user.
+\end_layout
+
+\begin_layout Standard
+\begin_inset Float figure
+placement H
+wide false
+sideways false
+status open
+
+\begin_layout Plain Layout
+\align center
+\begin_inset Graphics
+	filename evolution.png
+	lyxscale 30
+	scale 30
+
+\end_inset
+
+
+\begin_inset Caption Standard
+
+\begin_layout Plain Layout
+Web 4.0
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Section
+Web 5.0
+\end_layout
+
+\begin_layout Standard
+Although there is not a exactly starting date, Web 5.0 will looks for clasifying
+ emotions using devices, applications, products or services whose main goal
+ will be to improve the experience of companies or persons on the web.
+\end_layout
+
+\begin_layout Section
+Web 6.0
+\end_layout
+
+\begin_layout Standard
+Experts think that the Web 6.0 is going to be a smart connection integrated
+ in the nervous system based on the technological compatibility, in which
+ users will experiment a web site or a video in virtual reality.
+\end_layout
+
+\begin_layout Standard
+Systems will be focused on interactions with the user, for example implated
+ optical lens.
+ All tools are going to be managed using the vision, and they will be modified
+ and accomodated by an internal control system.
+\end_layout
+
+\begin_layout Bibliography
+\begin_inset CommandInset bibitem
+LatexCommand bibitem
+key "key-1"
+
+\end_inset
+
+https://es.slideshare.net/PedroLagos1/evolucion-de-la-web-desde-la-10-a-la-70-dr-p
+edro-salcedo
+\end_layout
+
+\begin_layout Bibliography
+\begin_inset CommandInset bibitem
+LatexCommand bibitem
+key "key-2"
+
+\end_inset
+
+https://disenowebakus.net/web-1.php
+\end_layout
+
+\begin_layout Bibliography
+\begin_inset CommandInset bibitem
+LatexCommand bibitem
+key "key-3"
+
+\end_inset
+
+https://es.wikipedia.org/wiki/Web_2.0#Web_3.0_o_Web_sem%C3%A1ntica
+\end_layout
+
+\begin_layout Bibliography
+\begin_inset CommandInset bibitem
+LatexCommand bibitem
+key "key-4"
+
+\end_inset
+
+https://es.wikipedia.org/wiki/Web_1.0
+\end_layout
+
+\begin_layout Bibliography
+\begin_inset CommandInset bibitem
+LatexCommand bibitem
+key "key-5"
+
+\end_inset
+
+http://jeuazarru.com/wp-content/uploads/2016/11/Evolucion-de-la-web.pdf
+\end_layout
+
+\begin_layout Bibliography
+\begin_inset CommandInset bibitem
+LatexCommand bibitem
+key "key-6"
+
+\end_inset
+
+https://www.infotecarios.com/estamos-listos-la-web-5-0/
+\end_layout
+
+\begin_layout Bibliography
+\begin_inset CommandInset bibitem
+LatexCommand bibitem
+key "key-7"
+
+\end_inset
+
+https://static.wikia.nocookie.net/clioudec/images/a/a6/Web_1.0_elements.png/revision/
+latest/scale-to-width-down/703?cb=20130627033624&path-prefix=es
+\end_layout
+
+\begin_layout Bibliography
+\begin_inset CommandInset bibitem
+LatexCommand bibitem
+key "key-8"
+
+\end_inset
+
+https://upload.wikimedia.org/wikiversity/en/a/a3/Web_2.0_elements.png
+\end_layout
+
+\begin_layout Bibliography
+\begin_inset CommandInset bibitem
+LatexCommand bibitem
+key "key-9"
+
+\end_inset
+
+https://cdn.hackernoon.com/hn-images/1*FksyrkAPPy3ncjTxmA4taQ.png
+\end_layout
+
+\begin_layout Bibliography
+\begin_inset CommandInset bibitem
+LatexCommand bibitem
+key "key-10"
+
+\end_inset
+
+https://ticsfransanzhernando.files.wordpress.com/2017/11/web-1-c3a0-4.png
+\end_layout
+
+\end_body
+\end_document

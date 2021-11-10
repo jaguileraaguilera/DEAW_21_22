@@ -1,0 +1,1327 @@
+#LyX 2.3 created this file. For more info see http://www.lyx.org/
+\lyxformat 544
+\begin_document
+\begin_header
+\save_transient_properties true
+\origin unavailable
+\textclass article
+\use_default_options true
+\maintain_unincluded_children false
+\language english
+\language_package default
+\inputencoding auto
+\fontencoding global
+\font_roman "default" "default"
+\font_sans "default" "default"
+\font_typewriter "default" "default"
+\font_math "auto" "auto"
+\font_default_family default
+\use_non_tex_fonts false
+\font_sc false
+\font_osf false
+\font_sf_scale 100 100
+\font_tt_scale 100 100
+\use_microtype false
+\use_dash_ligatures true
+\graphics default
+\default_output_format default
+\output_sync 0
+\bibtex_command default
+\index_command default
+\paperfontsize default
+\spacing single
+\use_hyperref false
+\papersize default
+\use_geometry false
+\use_package amsmath 1
+\use_package amssymb 1
+\use_package cancel 1
+\use_package esint 1
+\use_package mathdots 1
+\use_package mathtools 1
+\use_package mhchem 1
+\use_package stackrel 1
+\use_package stmaryrd 1
+\use_package undertilde 1
+\cite_engine basic
+\cite_engine_type default
+\biblio_style plain
+\use_bibtopic false
+\use_indices false
+\paperorientation portrait
+\suppress_date true
+\justification true
+\use_refstyle 1
+\use_minted 0
+\index Index
+\shortcut idx
+\color #008000
+\end_index
+\secnumdepth 3
+\tocdepth 3
+\paragraph_separation indent
+\paragraph_indentation default
+\is_math_indent 0
+\math_numbering_side default
+\quotes_style english
+\dynamic_quotes 0
+\papercolumns 1
+\papersides 1
+\paperpagestyle default
+\tracking_changes false
+\output_changes false
+\html_math_output 0
+\html_css_as_file 0
+\html_be_strict false
+\end_header
+
+\begin_body
+
+\begin_layout Title
+
+\series bold
+Unit 1.
+ Task 2: Apache + MySQL + PHP + phpMyAdmin installation in Ubuntu 18.04
+\end_layout
+
+\begin_layout Author
+Javier Aguilera Aguilera 2º CFGS DAW
+\end_layout
+
+\begin_layout Standard
+\begin_inset Newpage pagebreak
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset CommandInset toc
+LatexCommand tableofcontents
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Newpage pagebreak
+\end_inset
+
+
+\end_layout
+
+\begin_layout Section
+Previous steps
+\end_layout
+
+\begin_layout Standard
+Before making the installation, we are going to update our system executing
+ in the terminal the following commands: 
+\end_layout
+
+\begin_layout Standard
+\begin_inset listings
+inline false
+status open
+
+\begin_layout Plain Layout
+
+$ sudo apt update
+\end_layout
+
+\begin_layout Plain Layout
+
+$ sudo apt upgrade
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Float figure
+placement H
+wide false
+sideways false
+status collapsed
+
+\begin_layout Plain Layout
+\align center
+\begin_inset Graphics
+	filename im1.png
+	lyxscale 70
+	scale 70
+
+\end_inset
+
+
+\begin_inset Caption Standard
+
+\begin_layout Plain Layout
+We have our system up to date
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Section
+Apache
+\end_layout
+
+\begin_layout Standard
+In order to install Apache we type in the terminal 
+\emph on
+
+\begin_inset listings
+inline false
+status open
+
+\begin_layout Plain Layout
+
+$ sudo apt install apache2
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Launching the web browser and typing in the search bar 
+\emph on
+localhost
+\emph default
+, you can see if it works.
+\end_layout
+
+\begin_layout Standard
+\begin_inset Float figure
+placement H
+wide false
+sideways false
+status collapsed
+
+\begin_layout Plain Layout
+\align center
+\begin_inset Graphics
+	filename im4.png
+	lyxscale 70
+	scale 70
+
+\end_inset
+
+
+\begin_inset Caption Standard
+
+\begin_layout Plain Layout
+It works!
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+In case that it doesn't work you can reboot Apacher Server typing in the
+ terminal 
+\emph on
+
+\begin_inset listings
+inline false
+status open
+
+\begin_layout Plain Layout
+
+$ sudo /etc/init.d/apache2 restart
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Float figure
+placement H
+wide false
+sideways false
+status collapsed
+
+\begin_layout Plain Layout
+\align center
+\begin_inset Graphics
+	filename im5.png
+	lyxscale 70
+	scale 70
+
+\end_inset
+
+
+\begin_inset Caption Standard
+
+\begin_layout Plain Layout
+Restarting Apache
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Section
+MySQL
+\end_layout
+
+\begin_layout Standard
+You have to type in the terminal
+\end_layout
+
+\begin_layout Standard
+
+\emph on
+\begin_inset listings
+inline false
+status open
+
+\begin_layout Plain Layout
+
+$ sudo apt install mysql-server
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Later on, if you want to set a password for the administrator accont (root)
+ then type 
+\end_layout
+
+\begin_layout Standard
+
+\emph on
+\begin_inset listings
+inline false
+status open
+
+\begin_layout Plain Layout
+
+$ sudo mysql_secure_installation
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+This command is going to ask us for several parameters to set.
+ In the figures 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "fig:Screenshot_1"
+plural "false"
+caps "false"
+noprefix "false"
+
+\end_inset
+
+, 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "fig:Screenshot_2"
+plural "false"
+caps "false"
+noprefix "false"
+
+\end_inset
+
+ y 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "fig:Screenshot_3"
+plural "false"
+caps "false"
+noprefix "false"
+
+\end_inset
+
+ you can see the configuration that I have adopted:
+\end_layout
+
+\begin_layout Standard
+\begin_inset Float figure
+placement H
+wide false
+sideways false
+status collapsed
+
+\begin_layout Plain Layout
+\align center
+\begin_inset Graphics
+	filename im5_1.png
+	lyxscale 70
+	scale 70
+
+\end_inset
+
+
+\begin_inset Caption Standard
+
+\begin_layout Plain Layout
+Screenshot_1
+\begin_inset CommandInset label
+LatexCommand label
+name "fig:Screenshot_1"
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Float figure
+placement H
+wide false
+sideways false
+status collapsed
+
+\begin_layout Plain Layout
+\align center
+\begin_inset Graphics
+	filename im6_1.png
+	lyxscale 70
+	scale 70
+
+\end_inset
+
+
+\begin_inset Caption Standard
+
+\begin_layout Plain Layout
+Screenshot_2
+\begin_inset CommandInset label
+LatexCommand label
+name "fig:Screenshot_2"
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Float figure
+placement H
+wide false
+sideways false
+status collapsed
+
+\begin_layout Plain Layout
+\align center
+\begin_inset Graphics
+	filename im7_1.png
+	lyxscale 70
+	scale 70
+
+\end_inset
+
+
+\begin_inset Caption Standard
+
+\begin_layout Plain Layout
+Screenshot_3
+\begin_inset CommandInset label
+LatexCommand label
+name "fig:Screenshot_3"
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Subsection
+Trying a connection with MySQL
+\end_layout
+
+\begin_layout Standard
+Now we are going to try if the is installation is right.
+ To achive that purpose, at the terminal we are going to run 
+\end_layout
+
+\begin_layout Standard
+\begin_inset listings
+inline false
+status open
+
+\begin_layout Plain Layout
+
+$ mysql -u root -p
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Float figure
+placement H
+wide false
+sideways false
+status collapsed
+
+\begin_layout Plain Layout
+\align center
+\begin_inset Graphics
+	filename im10.png
+	lyxscale 70
+	scale 70
+
+\end_inset
+
+
+\begin_inset Caption Standard
+
+\begin_layout Plain Layout
+Here we have MySQL prompt working
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+A easy way to try MySQL is executing at the command prompt:
+\end_layout
+
+\begin_layout Standard
+\begin_inset listings
+lstparams "language=SQL"
+inline false
+status open
+
+\begin_layout Plain Layout
+
+> show databases;
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Float figure
+placement H
+wide false
+sideways false
+status collapsed
+
+\begin_layout Plain Layout
+\align center
+\begin_inset Graphics
+	filename im3.png
+	lyxscale 70
+	scale 70
+
+\end_inset
+
+
+\begin_inset Caption Standard
+
+\begin_layout Plain Layout
+Included databases in MySQL
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+If you want to comeback to bash we run
+\end_layout
+
+\begin_layout Standard
+\begin_inset listings
+lstparams "language=SQL"
+inline false
+status open
+
+\begin_layout Plain Layout
+
+> exit
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Section
+PHP
+\end_layout
+
+\begin_layout Standard
+The generic command that install the newest version of PHP that our Linux
+ based operating system support is:
+\end_layout
+
+\begin_layout Standard
+\begin_inset listings
+inline false
+status open
+
+\begin_layout Plain Layout
+
+$ sudo apt install php
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Then we restart Apache:
+\end_layout
+
+\begin_layout Standard
+
+\emph on
+\begin_inset listings
+inline false
+status open
+
+\begin_layout Plain Layout
+
+$ sudo /etc/init.d/apache2 restart
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Subsection
+Testing PHP
+\end_layout
+
+\begin_layout Standard
+From Ubuntu 14.04 and later versions, 
+\emph on
+/var/www/html
+\emph default
+ is the specific directory that Apache uses to find and serves archives.
+ In previous versions was 
+\emph on
+/var/www
+\emph default
+ As we want to try if the system is working fine, we have to change the
+ owner of the directory
+\emph on
+ /var/www/
+\emph default
+ and its subdirectories because they belong to root user and we want to
+ have permisions to make changes in them:
+\end_layout
+
+\begin_layout Standard
+
+\emph on
+\begin_inset listings
+inline false
+status open
+
+\begin_layout Plain Layout
+
+$ sudo chown -R $USER:root /var/www
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+After that, we are going to make a simple PHP file in 
+\emph on
+/var/www/html.
+ 
+\emph default
+First of all, we have to move into the directory:
+\end_layout
+
+\begin_layout Standard
+
+\emph on
+\begin_inset listings
+inline false
+status open
+
+\begin_layout Plain Layout
+
+$ cd /var/www/html
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Then we type in the terminal
+\end_layout
+
+\begin_layout Standard
+
+\emph on
+\begin_inset listings
+inline false
+status open
+
+\begin_layout Plain Layout
+
+$ gedit info.php
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+If you don't have gedit installed you can use nano or vim in its place.
+ When it is opened, you write the following content:
+\end_layout
+
+\begin_layout Standard
+
+\emph on
+\begin_inset listings
+lstparams "language=PHP"
+inline false
+status open
+
+\begin_layout Plain Layout
+
+<?php
+\end_layout
+
+\begin_layout Plain Layout
+
+	phpinfo();
+\end_layout
+
+\begin_layout Plain Layout
+
+?>
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Then save it and close the editor.
+\end_layout
+
+\begin_layout Standard
+Now, you have to open your favorite web browser and in the search bar write
+ 
+\emph on
+localhost/info.php
+\end_layout
+
+\begin_layout Standard
+\begin_inset Float figure
+placement H
+wide false
+sideways false
+status collapsed
+
+\begin_layout Plain Layout
+\align center
+\begin_inset Graphics
+	filename im12_1.png
+	lyxscale 70
+	scale 70
+
+\end_inset
+
+
+\begin_inset Caption Standard
+
+\begin_layout Plain Layout
+info.php
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Section
+phpMyAdmin
+\end_layout
+
+\begin_layout Standard
+Using 
+\emph on
+apt 
+\emph default
+package system we download and install phpMyAdmin in our system:
+\end_layout
+
+\begin_layout Standard
+\begin_inset listings
+inline false
+status open
+
+\begin_layout Plain Layout
+
+$ sudo apt install phpmyadmin
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Several popup windows are going to appear during the instalation:
+\end_layout
+
+\begin_layout Standard
+\begin_inset Float figure
+placement H
+wide false
+sideways false
+status collapsed
+
+\begin_layout Plain Layout
+\align center
+\begin_inset Graphics
+	filename im16.png
+	lyxscale 70
+	scale 70
+
+\end_inset
+
+
+\begin_inset Caption Standard
+
+\begin_layout Plain Layout
+Choosing web server
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Float figure
+placement H
+wide false
+sideways false
+status collapsed
+
+\begin_layout Plain Layout
+\align center
+\begin_inset Graphics
+	filename im17.png
+	lyxscale 70
+	scale 70
+
+\end_inset
+
+
+\begin_inset Caption Standard
+
+\begin_layout Plain Layout
+We have to choose 
+\begin_inset Quotes eld
+\end_inset
+
+Yes
+\begin_inset Quotes erd
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Float figure
+placement H
+wide false
+sideways false
+status collapsed
+
+\begin_layout Plain Layout
+\align center
+\begin_inset Graphics
+	filename im18.png
+	lyxscale 70
+	scale 70
+
+\end_inset
+
+
+\begin_inset Caption Standard
+
+\begin_layout Plain Layout
+Then it asks for a password, that later we confirm 
+\begin_inset CommandInset label
+LatexCommand label
+name "fig:set_password"
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+After the installation, you have to run the browser and type at the search
+ bar 
+\emph on
+/localhost/phpmyadmin.
+\end_layout
+
+\begin_layout Standard
+\begin_inset Float figure
+placement H
+wide false
+sideways false
+status collapsed
+
+\begin_layout Plain Layout
+\align center
+\begin_inset Graphics
+	filename im13_1.png
+	lyxscale 42
+	scale 42
+
+\end_inset
+
+
+\begin_inset Caption Standard
+
+\begin_layout Plain Layout
+Login phpMyAdmin page
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Login by the username 
+\emph on
+phpmyadmin
+\emph default
+ and the password that you set during the installation (Figure 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "fig:set_password"
+plural "false"
+caps "false"
+noprefix "false"
+
+\end_inset
+
+), it will charge phpMyAdmin home page.
+\end_layout
+
+\begin_layout Standard
+\begin_inset Float figure
+placement H
+wide false
+sideways false
+status collapsed
+
+\begin_layout Plain Layout
+\align center
+\begin_inset Graphics
+	filename im11.png
+	lyxscale 60
+	scale 60
+
+\end_inset
+
+
+\begin_inset Caption Standard
+
+\begin_layout Plain Layout
+phpMyAdmin home page
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+If we want to enter as a root then we have to change the authentication
+ method of root in MySQL.
+\end_layout
+
+\begin_layout Standard
+First of all, we have to run MySQL prompt as root:
+\end_layout
+
+\begin_layout Standard
+\begin_inset listings
+inline false
+status open
+
+\begin_layout Plain Layout
+
+$ sudo mysql -u root -p
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Then execute the following SQL stataments:
+\end_layout
+
+\begin_layout Standard
+\begin_inset listings
+lstparams "language=SQL"
+inline false
+status open
+
+\begin_layout Plain Layout
+
+> use mysql;
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset listings
+lstparams "language=SQL"
+inline false
+status open
+
+\begin_layout Plain Layout
+
+> update user set authetication_string=PASSWORD(
+\begin_inset Quotes eld
+\end_inset
+
+your_root_password_here
+\begin_inset Quotes erd
+\end_inset
+
+) 
+\end_layout
+
+\begin_layout Plain Layout
+
+where user = 'root';
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset listings
+lstparams "language=SQL"
+inline false
+status open
+
+\begin_layout Plain Layout
+
+> select user, plugin from user;
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Float figure
+placement H
+wide false
+sideways false
+status collapsed
+
+\begin_layout Plain Layout
+\align center
+\begin_inset Graphics
+	filename im14_1.png
+	lyxscale 70
+	scale 70
+
+\end_inset
+
+
+\begin_inset Caption Standard
+
+\begin_layout Plain Layout
+We have to choose 
+\begin_inset Quotes eld
+\end_inset
+
+Yes
+\begin_inset Quotes erd
+\end_inset
+
+
+\begin_inset CommandInset label
+LatexCommand label
+name "fig:select_mysql"
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+As we can see at the table returned in figure 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "fig:select_mysql"
+plural "false"
+caps "false"
+noprefix "false"
+
+\end_inset
+
+, the root user has a different authetication method.
+ We are going to change it because in a development enviroment is useful
+ to has access to the root user.
+ In a production enviroment we will set different users with different privilege
+s.
+ As we have to update de table we must execute an update statement:
+\end_layout
+
+\begin_layout Standard
+\begin_inset listings
+lstparams "language=SQL"
+inline false
+status open
+
+\begin_layout Plain Layout
+
+> update user set plugin=
+\begin_inset Quotes erd
+\end_inset
+
+mysql_native_password
+\begin_inset Quotes erd
+\end_inset
+
+ where user = 
+\begin_inset Quotes eld
+\end_inset
+
+root
+\begin_inset Quotes erd
+\end_inset
+
+;
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Now, let see if it works:
+\end_layout
+
+\begin_layout Standard
+\begin_inset listings
+lstparams "language=SQL"
+inline false
+status open
+
+\begin_layout Plain Layout
+
+> select user, plugin from user;
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset listings
+lstparams "language=SQL"
+inline false
+status open
+
+\begin_layout Plain Layout
+
+> flush privileges;
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset listings
+lstparams "language=SQL"
+inline false
+status open
+
+\begin_layout Plain Layout
+
+> exit;
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+That's all, if we enter with the browser in 
+\emph on
+/localhost/phpmyadmin
+\emph default
+ using the root account it will appears the phpMyAdmin home page.
+\end_layout
+
+\begin_layout Bibliography
+\begin_inset CommandInset bibitem
+LatexCommand bibitem
+key "key-1"
+
+\end_inset
+
+https://www.youtube.com/watch?v=YggXN_xJKbs
+\end_layout
+
+\end_body
+\end_document

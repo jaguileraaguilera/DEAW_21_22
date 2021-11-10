@@ -1,0 +1,1057 @@
+#LyX 2.3 created this file. For more info see http://www.lyx.org/
+\lyxformat 544
+\begin_document
+\begin_header
+\save_transient_properties true
+\origin unavailable
+\textclass article
+\use_default_options true
+\maintain_unincluded_children false
+\language english
+\language_package default
+\inputencoding auto
+\fontencoding global
+\font_roman "default" "default"
+\font_sans "default" "default"
+\font_typewriter "default" "default"
+\font_math "auto" "auto"
+\font_default_family default
+\use_non_tex_fonts false
+\font_sc false
+\font_osf false
+\font_sf_scale 100 100
+\font_tt_scale 100 100
+\use_microtype false
+\use_dash_ligatures true
+\graphics default
+\default_output_format default
+\output_sync 0
+\bibtex_command default
+\index_command default
+\float_placement H
+\paperfontsize default
+\spacing single
+\use_hyperref false
+\papersize default
+\use_geometry false
+\use_package amsmath 1
+\use_package amssymb 1
+\use_package cancel 1
+\use_package esint 1
+\use_package mathdots 1
+\use_package mathtools 1
+\use_package mhchem 1
+\use_package stackrel 1
+\use_package stmaryrd 1
+\use_package undertilde 1
+\cite_engine basic
+\cite_engine_type default
+\biblio_style plain
+\use_bibtopic false
+\use_indices false
+\paperorientation portrait
+\suppress_date true
+\justification true
+\use_refstyle 1
+\use_minted 0
+\index Index
+\shortcut idx
+\color #008000
+\end_index
+\secnumdepth 3
+\tocdepth 3
+\paragraph_separation indent
+\paragraph_indentation default
+\is_math_indent 0
+\math_numbering_side default
+\quotes_style english
+\dynamic_quotes 0
+\papercolumns 1
+\papersides 1
+\paperpagestyle default
+\tracking_changes false
+\output_changes false
+\html_math_output 0
+\html_css_as_file 0
+\html_be_strict false
+\end_header
+
+\begin_body
+
+\begin_layout Title
+
+\series bold
+Unit 1.
+ Task 0: Installation guide of Ubuntu 18.04.06 LTS
+\end_layout
+
+\begin_layout Author
+Javier Aguilera Aguilera 2º CFGS DAW
+\end_layout
+
+\begin_layout Standard
+\begin_inset Newpage pagebreak
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset CommandInset toc
+LatexCommand tableofcontents
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Newpage pagebreak
+\end_inset
+
+
+\end_layout
+
+\begin_layout Section
+Introduction
+\end_layout
+
+\begin_layout Subsection
+Overview
+\end_layout
+
+\begin_layout Standard
+In order to made our practices of the module Web Apps Deployment from the
+ second course of WAD, our teacher propose us using the operative system
+ Ubuntu 18.04.06 LTS.
+ This operative system has several advantages that make it ideal for the
+ objectives that we have:
+\end_layout
+
+\begin_layout Itemize
+It is free.
+\end_layout
+
+\begin_layout Itemize
+It has lot of documentation on the internet.
+\end_layout
+
+\begin_layout Itemize
+It is a LTS (Long Term Support) version.
+ That means that it is going to be supported until 2023.
+ This is synonym of stability, a needed feature in a server.
+\end_layout
+
+\begin_layout Itemize
+It has all the essential programs to set up a web server.
+\end_layout
+
+\begin_layout Standard
+Due to all these arguments, we are going to make an installation of it on
+ a virtual machine on the next sections.
+\end_layout
+
+\begin_layout Subsection
+Download section
+\end_layout
+
+\begin_layout Standard
+\begin_inset Float figure
+wide false
+sideways false
+status collapsed
+
+\begin_layout Plain Layout
+\align center
+\begin_inset Graphics
+	filename img1.png
+	lyxscale 35
+	scale 35
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset Caption Standard
+
+\begin_layout Plain Layout
+Screenshot of the download web page
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+
+We can obtain Ubuntu 18.04.06 LTS following the next link:
+\end_layout
+
+\begin_layout Itemize
+\begin_inset Flex URL
+status open
+
+\begin_layout Plain Layout
+
+https://releases.ubuntu.com/18.04/
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Section
+System requirements
+\end_layout
+
+\begin_layout Standard
+Ubuntu 18.04 LTS states minimum as:
+\end_layout
+
+\begin_layout Itemize
+2 GHz dual core processor or better.
+\end_layout
+
+\begin_layout Itemize
+4 GiB RAM / 2 GiB RAM (system memory) for virtualised installs.
+\end_layout
+
+\begin_layout Itemize
+25 GB (8.6 GB for minimal) of hard-drive space (or USB stick, memory card
+ or external drive but see LiveCD for an alternative approach).
+\end_layout
+
+\begin_layout Itemize
+VGA capable of 1024x768 screen resolution.
+\end_layout
+
+\begin_layout Itemize
+Either a DVD drive or a USB port for the installer media.
+\end_layout
+
+\begin_layout Itemize
+Internet access is helpful.
+\end_layout
+
+\begin_layout Section
+Installing Ubuntu Desktop
+\end_layout
+
+\begin_layout Subsection
+Setting up a virtual machine
+\end_layout
+
+\begin_layout Standard
+Firstly, we assume that we have already installed the program VirtualBox.
+ Otherwise, we can obtain it from the following link:
+\end_layout
+
+\begin_layout Itemize
+\begin_inset Flex URL
+status open
+
+\begin_layout Plain Layout
+
+https://www.virtualbox.org/wiki/Downloads
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Running it, it will appear a home page quite similar to the shown on the
+ figure 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "fig:Inicio-de-VirtualBox"
+plural "false"
+caps "false"
+noprefix "false"
+
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Standard
+\begin_inset Float figure
+wide false
+sideways false
+status open
+
+\begin_layout Plain Layout
+\align center
+\begin_inset Graphics
+	filename img2.png
+	lyxscale 60
+	scale 60
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset Caption Standard
+
+\begin_layout Plain Layout
+\begin_inset CommandInset label
+LatexCommand label
+name "fig:Inicio-de-VirtualBox"
+
+\end_inset
+
+VirtualBox home page
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+First of all, we click on 
+\begin_inset Quotes eld
+\end_inset
+
+Nueva
+\begin_inset Quotes erd
+\end_inset
+
+.
+ After that, a pop-up window appears as the figure 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "fig:nombre y so"
+plural "false"
+caps "false"
+noprefix "false"
+
+\end_inset
+
+ shows.
+\end_layout
+
+\begin_layout Standard
+\begin_inset Float figure
+wide false
+sideways false
+status open
+
+\begin_layout Plain Layout
+\align center
+\begin_inset Graphics
+	filename img3.png
+	lyxscale 60
+	scale 60
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset Caption Standard
+
+\begin_layout Plain Layout
+Choosing the name, operative system and installation path of the virtual
+ machine
+\begin_inset CommandInset label
+LatexCommand label
+name "fig:nombre y so"
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Next, we click on 
+\begin_inset Quotes eld
+\end_inset
+
+Next
+\begin_inset Quotes erd
+\end_inset
+
+, swapping to the memory size selection window.
+ Following the system requirements, we select 2 GiB (2048 MiB) of RAM memory.
+\end_layout
+
+\begin_layout Standard
+\begin_inset Float figure
+wide false
+sideways false
+status open
+
+\begin_layout Plain Layout
+\align center
+\begin_inset Graphics
+	filename img4.png
+	lyxscale 60
+	scale 60
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset Caption Standard
+
+\begin_layout Plain Layout
+Selecting memory size
+\begin_inset CommandInset label
+LatexCommand label
+name "fig:Tamaño-de-memoria"
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+We do click on 
+\begin_inset Quotes eld
+\end_inset
+
+Crear
+\begin_inset Quotes erd
+\end_inset
+
+ and we create a virtual hard disk with, at least, 8.6 GiB.
+ As I have lot of space on my physical hard disk, I will reserve for the
+ virtual hard disk 25 GiB as it is recommended.
+\end_layout
+
+\begin_layout Standard
+\begin_inset Float figure
+wide false
+sideways false
+status collapsed
+
+\begin_layout Plain Layout
+\align center
+\begin_inset Graphics
+	filename img5.png
+	lyxscale 60
+	scale 60
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset Caption Standard
+
+\begin_layout Plain Layout
+Size and path of the virtual hard disk
+\begin_inset CommandInset label
+LatexCommand label
+name "fig:Tamaño-hd"
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+That's all, now we have our virtual machine ready for the installation.
+\end_layout
+
+\begin_layout Standard
+\begin_inset Float figure
+wide false
+sideways false
+status collapsed
+
+\begin_layout Plain Layout
+\align center
+\begin_inset Graphics
+	filename img6.png
+	lyxscale 65
+	scale 65
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset Caption Standard
+
+\begin_layout Plain Layout
+Virtual machine already set up
+\begin_inset CommandInset label
+LatexCommand label
+name "fig:mv-configurada"
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+We do click on “Iniciar” and they are going to appear two differents windows:
+ One is the execution windows of the virtual machine.
+ The second is an pop-up window in which the ISO that we downloaded previously
+ is needed as system boot disk of the system.
+ So we have to indicate the path of the ISO and we attached it.
+\end_layout
+
+\begin_layout Standard
+\begin_inset Float figure
+wide false
+sideways false
+status collapsed
+
+\begin_layout Plain Layout
+\align center
+\begin_inset Graphics
+	filename img7.png
+	lyxscale 65
+	scale 65
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset Caption Standard
+
+\begin_layout Plain Layout
+First running
+\begin_inset CommandInset label
+LatexCommand label
+name "fig:Adjuntar-iso"
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Subsection
+Installation steps
+\end_layout
+
+\begin_layout Standard
+As soon as we turn on our virtual machine, we have to choose the installation
+ idiom and if we want to install Ubuntu or if we only want to try it without
+ making any changes into our machine.
+\end_layout
+
+\begin_layout Standard
+\begin_inset Float figure
+wide false
+sideways false
+status collapsed
+
+\begin_layout Plain Layout
+\align center
+\begin_inset Graphics
+	filename img8.png
+	lyxscale 50
+	scale 50
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset Caption Standard
+
+\begin_layout Plain Layout
+Welcome slide
+\begin_inset CommandInset label
+LatexCommand label
+name "fig:idioma-instalacion"
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+In the next step, we have to choose the keyboard layout that we have in
+ our physical machine.
+ In our case, we are going to choose the Spanish keyboard layout.
+\end_layout
+
+\begin_layout Standard
+\begin_inset Float figure
+wide false
+sideways false
+status collapsed
+
+\begin_layout Plain Layout
+\align center
+\begin_inset Graphics
+	filename img9.png
+	lyxscale 50
+	scale 50
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset Caption Standard
+
+\begin_layout Plain Layout
+Keyboard layout
+\begin_inset CommandInset label
+LatexCommand label
+name "fig:distribucion-teclado"
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+The following slide allows us to choose the installation type (normal or
+ minimal) and if we want to select other options shown on figure 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "fig:actualizaciones-software"
+plural "false"
+caps "false"
+noprefix "false"
+
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Standard
+\begin_inset Float figure
+wide false
+sideways false
+status collapsed
+
+\begin_layout Plain Layout
+\align center
+\begin_inset Graphics
+	filename img10.png
+	lyxscale 75
+	scale 75
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset Caption Standard
+
+\begin_layout Plain Layout
+Updates and other sofware
+\begin_inset CommandInset label
+LatexCommand label
+name "fig:actualizaciones-software"
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+In our case, we will only select the minimal installation.
+ If we need other additional software, we will install it after the installation
+ is done.
+\end_layout
+
+\begin_layout Standard
+Now, in this slide we can choose how are we going to make the installation
+ on the hard disk.
+ We select the easiest option: Erase disk and install Ubuntu, as shown in
+ figure 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "fig:tipo-instalacion"
+plural "false"
+caps "false"
+noprefix "false"
+
+\end_inset
+
+ 
+\end_layout
+
+\begin_layout Standard
+\begin_inset Float figure
+wide false
+sideways false
+status collapsed
+
+\begin_layout Plain Layout
+\align center
+\begin_inset Graphics
+	filename img11.png
+	lyxscale 55
+	scale 55
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset Caption Standard
+
+\begin_layout Plain Layout
+Installation type
+\begin_inset CommandInset label
+LatexCommand label
+name "fig:tipo-instalacion"
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+In figure 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "fig:zona-horaria"
+plural "false"
+caps "false"
+noprefix "false"
+
+\end_inset
+
+ we write our location in order to determine our time zone.
+\end_layout
+
+\begin_layout Standard
+\begin_inset Float figure
+wide false
+sideways false
+status collapsed
+
+\begin_layout Plain Layout
+\align center
+\begin_inset Graphics
+	filename img12.png
+	lyxscale 55
+	scale 55
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset Caption Standard
+
+\begin_layout Plain Layout
+Time zone
+\begin_inset CommandInset label
+LatexCommand label
+name "fig:zona-horaria"
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+For ending, our personal information is asked.
+ After filling the fields, we click on “Next” and the installation begins.
+\end_layout
+
+\begin_layout Standard
+\begin_inset Float figure
+wide false
+sideways false
+status collapsed
+
+\begin_layout Plain Layout
+\align center
+\begin_inset Graphics
+	filename img13.png
+	lyxscale 50
+	scale 50
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset Caption Standard
+
+\begin_layout Plain Layout
+User's information
+\begin_inset CommandInset label
+LatexCommand label
+name "fig:datos-usuario"
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\begin_inset Float figure
+wide false
+sideways false
+status collapsed
+
+\begin_layout Plain Layout
+\align center
+\begin_inset Graphics
+	filename img14.png
+	lyxscale 50
+	scale 50
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset Caption Standard
+
+\begin_layout Plain Layout
+Installation running
+\begin_inset CommandInset label
+LatexCommand label
+name "fig:instalacion-en-proceso"
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+When the installation is done, the system requires a restart.
+\end_layout
+
+\begin_layout Standard
+\begin_inset Float figure
+wide false
+sideways false
+status collapsed
+
+\begin_layout Plain Layout
+\align center
+\begin_inset Graphics
+	filename img15.png
+	lyxscale 55
+	scale 55
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset Caption Standard
+
+\begin_layout Plain Layout
+Installation is done
+\begin_inset CommandInset label
+LatexCommand label
+name "fig:instalacion-finalizada"
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+After the restart, here we have Ubuntu working.
+\end_layout
+
+\begin_layout Standard
+\begin_inset Float figure
+wide false
+sideways false
+status collapsed
+
+\begin_layout Plain Layout
+\align center
+\begin_inset Graphics
+	filename img16.png
+	lyxscale 55
+	scale 55
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset Caption Standard
+
+\begin_layout Plain Layout
+Ubuntu
+\begin_inset CommandInset label
+LatexCommand label
+name "fig:ubuntu"
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_body
+\end_document
